@@ -31,16 +31,31 @@
     </div>
   </section>
 
-  <section class="categorias">
-    <h2>Categorías Principales</h2>
-    <p>Encuentra todo lo que necesitas para tu mascota organizado por categorías</p>
-    <div class="grid-categorias">
-      <div class="categoria perros">🐶 <strong>Perros</strong></div>
-      <div class="categoria gatos">🐱 <strong>Gatos</strong></div>
-      <div class="categoria aves">🦜 <strong>Aves</strong></div>
-      <div class="categoria peces">🐠 <strong>Peces</strong></div>
+  <div class="carrusel">
+  <button class="carrusel-btn izq" onclick="moverCarrusel(-1)">&#8592;</button>
+  
+  <div class="carrusel-contenedor">
+    <div class="categoria-item">
+      <img src="https://images.pexels.com/photos/1108099/pexels-photo-1108099.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Perros">
+      <h3>🐶 Perros</h3>
     </div>
-  </section>
+    <div class="categoria-item">
+      <img src="https://images.pexels.com/photos/1170986/pexels-photo-1170986.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gatos">
+      <h3>🐱 Gatos</h3>
+    </div>
+    <div class="categoria-item">
+      <img src="https://images.pexels.com/photos/1661179/pexels-photo-1661179.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Aves">
+      <h3>🦜 Aves</h3>
+    </div>
+    <div class="categoria-item">
+      <img src="https://images.pexels.com/photos/1583459/pexels-photo-1583459.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Peces">
+      <h3>🐠 Peces</h3>
+    </div>
+  </div>
+
+  <button class="carrusel-btn der" onclick="moverCarrusel(1)">&#8594;</button>
+</div>
+
 
   <section class="productos">
     <h2>Productos destacados</h2>
