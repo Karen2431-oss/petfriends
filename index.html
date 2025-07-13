@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetFriendS - Tienda de Mascotas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>PetFriendS</h1>
+    <nav>
+      <a href="#">Inicio</a>
+      <a href="#">Productos</a>
+      <a href="#">Contacto</a>
+      <a href="#">Carrito 🛒</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Bienvenido a PetFriendS</h2>
+      <p>Encuentra lo mejor para tus mascotas: comida, juguetes, accesorios y más.</p>
+    </section>
+
+    <section class="productos">
+      <h2>Productos destacados</h2>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Juguete para perro">
+        <h3>Pelota para perro</h3>
+        <p>$4.99</p>
+        <button onclick="agregarAlCarrito('Pelota para perro', 4.99)">Agregar al carrito</button>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/200" alt="Comida para gato">
+        <h3>Comida Premium Gato</h3>
+        <p>$12.50</p>
+        <button onclick="agregarAlCarrito('Comida Premium Gato', 12.50)">Agregar al carrito</button>
+      </div>
+    </section>
+
+    <section class="carrito">
+      <h2>Carrito de compras</h2>
+      <ul id="lista-carrito"></ul>
+      <p id="total">Total: $0.00</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 PetFriendS - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
