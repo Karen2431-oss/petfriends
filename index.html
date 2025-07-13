@@ -5,59 +5,78 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>PetFriendS - Tienda de Mascotas</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>PetFriendS</h1>
-      <nav>
-        <a href="#">Inicio</a>
-        <a href="#">Productos</a>
-        <a href="#">Contacto</a>
-        <a href="#carrito">Carrito 🛒</a>
-      </nav>
+  <header class="header">
+    <div class="logo">🐾 <span>PetFriends</span></div>
+    <nav class="nav">
+      <a href="#">Todos</a>
+      <a href="#">🐶 Perros</a>
+      <a href="#">🐱 Gatos</a>
+      <a href="#">🦜 Aves</a>
+      <a href="#">🐠 Peces</a>
+      <a href="#">🔗 Accesorios</a>
+    </nav>
+    <div class="acciones">
+      <input type="text" placeholder="Buscar productos..." />
+      <span>🤍</span>
+      <span>🛒</span>
     </div>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Bienvenido a PetFriendS</h2>
-      <p>Encuentra lo mejor para tus mascotas: comida, juguetes, accesorios y más.</p>
-    </section>
+  <section class="hero">
+    <h1>Todo lo que <span class="color">tu mascota</span> necesita</h1>
+    <p>Descubre nuestra amplia selección de productos premium para perros, gatos, aves y peces. Calidad garantizada y precios increíbles.</p>
+    <div class="botones-hero">
+      <button class="btn-primario">Explorar Productos</button>
+      <button class="btn-secundario">Ofertas Especiales</button>
+    </div>
+  </section>
 
-    <section class="productos">
-      <h2>Productos destacados</h2>
-      <div class="grid-productos">
-        <div class="card">
-          <img src="https://via.placeholder.com/200" alt="Juguete para perro"/>
-          <h3>Pelota para perro</h3>
-          <p class="precio">$4.99</p>
-          <button onclick="agregarAlCarrito('Pelota para perro', 4.99)">Agregar al carrito</button>
-        </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/200" alt="Comida para gato"/>
-          <h3>Comida Premium Gato</h3>
-          <p class="precio">$12.50</p>
-          <button onclick="agregarAlCarrito('Comida Premium Gato', 12.50)">Agregar al carrito</button>
-        </div>
+  <section class="categorias">
+    <h2>Categorías Principales</h2>
+    <p>Encuentra todo lo que necesitas para tu mascota organizado por categorías</p>
+    <div class="grid-categorias">
+      <div class="categoria perros">🐶 <strong>Perros</strong></div>
+      <div class="categoria gatos">🐱 <strong>Gatos</strong></div>
+      <div class="categoria aves">🦜 <strong>Aves</strong></div>
+      <div class="categoria peces">🐠 <strong>Peces</strong></div>
+    </div>
+  </section>
+
+  <section class="productos">
+    <h2>Todos los Productos</h2>
+    <div class="filtros">
+      <select>
+        <option>Ordenar por</option>
+        <option>Precio: menor a mayor</option>
+        <option>Precio: mayor a menor</option>
+        <option>Popularidad</option>
+      </select>
+    </div>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-1" alt="comida perro">
+        <h3>Premium Dog Food - Chicken & Rice</h3>
+        <p>High-quality dry food for adult dogs with real chicken and rice</p>
+        <div class="precio">$19.99</div>
+        <button onclick="agregarAlCarrito('Comida Perro', 19.99)">Agregar</button>
       </div>
-    </section>
-
-    <section class="carrito" id="carrito">
-      <h2>Carrito de compras</h2>
-      <ul id="lista-carrito"></ul>
-      <p id="total">Total: $0.00</p>
-    </section>
-  </main>
+      <div class="producto">
+        <img src="https://images.unsplash.com/photo-2" alt="correa">
+        <h3>Dog Leash - Retractable</h3>
+        <p>Durable retractable leash with comfortable grip</p>
+        <div class="precio">$12.99</div>
+        <button onclick="agregarAlCarrito('Correa Retráctil', 12.99)">Agregar</button>
+      </div>
+      <!-- Agrega más productos aquí -->
+    </div>
+  </section>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 PetFriendS - Todos los derechos reservados</p>
-    </div>
+    <p>&copy; 2025 PetFriendS - Todos los derechos reservados</p>
   </footer>
 
   <script src="script.js"></script>
 </body>
 </html>
-

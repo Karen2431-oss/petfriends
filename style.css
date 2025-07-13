@@ -5,119 +5,164 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f9f9f9;
+  color: #222;
 }
 
-.container {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px;
+.header {
+  background: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
 }
 
-header {
-  background-color: #4CAF50;
-  color: white;
-  padding: 20px 0;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-header h1 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-nav {
-  text-align: center;
-}
-
-nav a {
-  margin: 0 15px;
-  text-decoration: none;
-  color: white;
+.logo span {
+  color: #2471f2;
   font-weight: bold;
+  font-size: 1.2rem;
 }
 
-nav a:hover {
-  text-decoration: underline;
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
 }
 
-.intro {
+.acciones {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.acciones input {
+  padding: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+}
+
+.hero {
+  background: linear-gradient(90deg, #2471f2, #7b2ff7);
+  color: #fff;
   text-align: center;
-  margin-bottom: 40px;
+  padding: 4rem 2rem;
 }
 
-.productos h2,
-.carrito h2 {
-  margin-bottom: 20px;
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero .color {
+  color: orange;
+}
+
+.botones-hero {
+  margin-top: 1.5rem;
+}
+
+.btn-primario,
+.btn-secundario {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.btn-primario {
+  background-color: orange;
+  color: white;
+}
+
+.btn-secundario {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+}
+
+.categorias {
+  text-align: center;
+  padding: 2rem;
+  background: #fff;
+}
+
+.grid-categorias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.categoria {
+  padding: 2rem;
+  border-radius: 15px;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.perros { background: #2471f2; }
+.gatos { background: #a144f2; }
+.aves { background: #28a745; }
+.peces { background: #17a2b8; }
+
+.productos {
+  padding: 2rem;
+}
+
+.filtros {
+  text-align: right;
+  margin-bottom: 1rem;
 }
 
 .grid-productos {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
 }
 
-.card {
-  background-color: white;
-  border-radius: 8px;
-  padding: 20px;
+.producto {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-  transition: transform 0.2s;
 }
 
-.card:hover {
-  transform: translateY(-5px);
-}
-
-.card img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 15px;
-  border-radius: 6px;
+.producto img {
+  max-width: 100%;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
 }
 
 .precio {
-  color: #4CAF50;
-  font-size: 1.2em;
-  margin: 10px 0;
-}
-
-button {
-  background-color: #4CAF50;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 6px;
-  cursor: pointer;
+  color: green;
   font-weight: bold;
+  margin: 0.5rem 0;
 }
 
-button:hover {
-  background-color: #45a049;
-}
-
-.carrito {
-  margin-top: 50px;
-  background: #fff;
-  padding: 20px;
+.producto button {
+  background: #2471f2;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
   border-radius: 8px;
-}
-
-.carrito ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.carrito li {
-  margin-bottom: 10px;
+  cursor: pointer;
 }
 
 footer {
-  background-color: #eee;
   text-align: center;
-  padding: 15px 0;
-  margin-top: 50px;
+  padding: 1rem;
+  background: #eee;
+  margin-top: 2rem;
 }
