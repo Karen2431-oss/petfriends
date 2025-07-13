@@ -4,20 +4,16 @@ function agregarAlCarrito(producto, precio) {
   alert(`${producto} agregado al carrito. Total: $${carrito.reduce((s, p) => s + p.precio, 0).toFixed(2)}`);
 }
 
-let indice = 0;
+let bannerIndex = 0;
 
-function moverCarrusel(direccion) {
-  const contenedor = document.querySelector('.carrusel-contenedor');
-  const items = document.querySelectorAll('.categoria-item');
+function cambiarSlide(direccion) {
+  const container = document.getElementById('bannerContainer');
+  const totalSlides = container.children.length;
 
-  if (!contenedor || items.length === 0) return;
+  bannerIndex += direccion;
 
-  const visible = 1; // mostrar 1 elemento por vez
-  indice += direccion;
+  if (bannerIndex < 0) bannerIndex = totalSlides - 1;
+  if (bannerIndex >= totalSlides) bannerIndex = 0;
 
-  if (indice < 0) indice = items.length - visible;
-  if (indice > items.length - visible) indice = 0;
-
-  const anchoItem = items[0].offsetWidth + 16; // ancho + gap
-  contenedor.style.transform = `translateX(${-indice * anchoItem}px)`;
+  container.style.transform = `translateX(-${bannerIndex * 100}%)`;
 }
