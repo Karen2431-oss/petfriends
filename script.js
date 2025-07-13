@@ -4,16 +4,14 @@ function agregarAlCarrito(producto, precio) {
   alert(`${producto} agregado al carrito. Total: $${carrito.reduce((s, p) => s + p.precio, 0).toFixed(2)}`);
 }
 
-let bannerIndex = 0;
+<script>
+  const bannerContainer = document.getElementById("bannerContainer");
+  let index = 0;
 
-function cambiarSlide(direccion) {
-  const container = document.getElementById('bannerContainer');
-  const totalSlides = container.children.length;
+  function slideBanner() {
+    index = (index + 1) % 4; // 4 banners
+    bannerContainer.style.transform = `translateX(-${index * 100}%)`;
+  }
 
-  bannerIndex += direccion;
-
-  if (bannerIndex < 0) bannerIndex = totalSlides - 1;
-  if (bannerIndex >= totalSlides) bannerIndex = 0;
-
-  container.style.transform = `translateX(-${bannerIndex * 100}%)`;
-}
+  setInterval(slideBanner, 4000); // cambia cada 4 segundos
+</script>
