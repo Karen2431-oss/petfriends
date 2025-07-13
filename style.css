@@ -170,14 +170,17 @@ footer {
 .banner-slider {
   position: relative;
   overflow: hidden;
-  height: 280px;
-  margin: 2rem 0;
+  height: 280px; /* más pequeño que 300px */
+  margin: 2rem auto;
+  max-width: 1000px; /* ajusta el ancho máximo */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 .banner-container {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  width: 400%;
+  width: 400%; /* sigue siendo 4 banners */
 }
 
 .banner-slide {
