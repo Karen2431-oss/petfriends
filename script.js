@@ -12,12 +12,12 @@ function moverCarrusel(direccion) {
 
   if (!contenedor || items.length === 0) return;
 
-  const visible = 1; // cuántos se muestran a la vez
+  const visible = 1; // mostrar 1 elemento por vez
   indice += direccion;
 
   if (indice < 0) indice = items.length - visible;
   if (indice > items.length - visible) indice = 0;
 
-  const anchoItem = items[0].offsetWidth + 16; // 16px gap
+  const anchoItem = items[0].offsetWidth + 16; // ancho + gap
   contenedor.style.transform = `translateX(${-indice * anchoItem}px)`;
 }

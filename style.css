@@ -171,18 +171,20 @@ footer {
   display: flex;
   align-items: center;
   overflow: hidden;
-  gap: 0.5rem;
-  margin-top: 2rem;
+  padding: 1rem 0;
 }
 
 .carrusel-contenedor {
   display: flex;
+  flex-wrap: nowrap;
   gap: 1rem;
   transition: transform 0.5s ease-in-out;
+  overflow-x: hidden;
 }
 
 .categoria-item {
-  min-width: 250px;
+  flex: 0 0 auto;
+  width: 250px;
   background: white;
   border-radius: 15px;
   overflow: hidden;
@@ -208,4 +210,5 @@ footer {
   cursor: pointer;
   padding: 0.3rem 0.8rem;
   border-radius: 8px;
+  height: 100%;
 }
