@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetFriendS - Perros</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🐾 <span>PetFriends</span></div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="perros.html">Perros</a>
+      <a href="gatos.html">Gatos</a>
+      <a href="aves.html">Aves</a>
+      <a href="peces.html">Peces</a>
+    </nav>
+    <div class="acciones">
+      <input type="text" placeholder="Buscar productos..." />
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>🐶 Lo mejor para tu perro</h1>
+    <p>Descubre comida, accesorios y cuidados para tu amigo fiel.</p>
+  </section>
+
+  <section class="productos">
+    <h2>Productos para Perros</h2>
+    <div class="grid-productos">
+      <!-- Productos específicos de perros -->
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/6c/68/12/6c6812a734af2d3413cc54eb5b0de888.jpg" alt="Dog Chow">
+        <h3>Dog Chow</h3>
+        <p>Alimento seco con auténtico pollo y arroz para cachorros.</p>
+        <div class="precio">$19.99</div>
+        <button onclick="agregarAlCarrito('Dog Chow', 19.99)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/1a/4b/d3/1a4bd3489533b11904c10f6c8ac0475d.jpg" alt="Correa">
+        <h3>Correa y arnés</h3>
+        <p>Correa ultra resistente para perros adultos.</p>
+        <div class="precio">$12.99</div>
+        <button onclick="agregarAlCarrito('Correa', 12.99)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/1200x/a8/3e/fc/a83efc867fab4a3e0ea97a685398a1d4.jpg" alt="Spray dental">
+        <h3>Spray dental</h3>
+        <p>Con sabor a menta para higiene bucal de perros.</p>
+        <div class="precio">$19.99</div>
+        <button onclick="agregarAlCarrito('Spray dental', 19.99)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PetFriendS - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

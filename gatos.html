@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PetFriendS - Gatos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">🐾 <span>PetFriends</span></div>
+    <nav class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="perros.html">Perros</a>
+      <a href="gatos.html">Gatos</a>
+      <a href="aves.html">Aves</a>
+      <a href="peces.html">Peces</a>
+    </nav>
+    <div class="acciones">
+      <input type="text" placeholder="Buscar productos..." />
+      <span>🛒</span>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>🐱 El mimo perfecto para tu gato</h1>
+    <p>Rascadores, camas y todo lo que tu felino necesita para ronronear feliz.</p>
+  </section>
+
+  <section class="productos">
+    <h2>Productos para Gatos</h2>
+    <div class="grid-productos">
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/60/b4/1a/60b41a8efedfc59d9c6e9c4748445868.jpg" alt="rascador">
+        <h3>Árbol rascador azul</h3>
+        <p>Zona de juegos y descanso para tu gato.</p>
+        <div class="precio">$99.99</div>
+        <button onclick="agregarAlCarrito('Rascador', 99.99)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/1200x/9e/3c/5b/9e3c5bb42d256feaf919d1891dd2abed.jpg" alt="bandeja">
+        <h3>Bandeja sanitaria</h3>
+        <p>Diseño práctico y resistente para arena.</p>
+        <div class="precio">$15.99</div>
+        <button onclick="agregarAlCarrito('Bandeja', 15.99)">Agregar</button>
+      </div>
+      <div class="producto">
+        <img src="https://i.pinimg.com/736x/18/eb/8a/18eb8ac71d6166a6cf1e7a3ab319e86a.jpg" alt="cama">
+        <h3>Cama suave</h3>
+        <p>Perfecta para gatos que aman el confort.</p>
+        <div class="precio">$19.99</div>
+        <button onclick="agregarAlCarrito('Cama', 19.99)">Agregar</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PetFriendS - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
