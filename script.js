@@ -9,9 +9,8 @@ function agregarAlCarrito(producto, precio) {
   let index = 0;
 
   function slideBanner() {
-    index = (index + 1) % 4; // 4 banners
+    index = (index + 1) % 4} // 4 banners
     bannerContainer.style.transform = `translateX(-${index * 100}%)`;
-  }
 
   setInterval(slideBanner, 4000); // cambia cada 4 segundos
 </script>
