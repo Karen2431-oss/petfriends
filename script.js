@@ -11,6 +11,6 @@ function agregarAlCarrito(producto, precio) {
   function slideBanner() {
     index = (index + 1) % 4} // 4 banners
     bannerContainer.style.transform = `translateX(-${index * 100}%)`;
-
+  {}
   setInterval(slideBanner, 4000); // cambia cada 4 segundos
 </script>
