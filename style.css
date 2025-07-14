@@ -227,3 +227,39 @@ footer {
 .carrito ul li {
   margin-bottom: 0.5rem;
 }
+
+footer {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #555;
+  margin-top: 2rem;
+}
+
+.footer-social {
+  margin-bottom: 1rem;
+}
+
+.footer-social h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.social-icons img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
