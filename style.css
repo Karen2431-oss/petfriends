@@ -202,3 +202,29 @@ footer {
   font-weight: bold;
   border-radius: 8px;
 }
+
+#cart-icon {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#cart {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  width: 300px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 10px;
+  display: none;
+}
+
+.cart-hidden {
+  display: none;
+}
+
+.cart-visible {
+  display: block;
+}

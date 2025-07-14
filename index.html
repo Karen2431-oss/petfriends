@@ -16,10 +16,21 @@
       <a href="aves.html">Aves</a>
       <a href="peces.html">Peces</a>
     </nav>
-    <div class="acciones">
-      <input type="text" placeholder="Buscar productos..." />
-      <span>🛒</span>
-    </div>
+    
+<!-- Ícono del carrito -->
+<div id="cart-icon" onclick="toggleCart()">
+  🛒 <span id="cart-count">0</span>
+</div>
+
+<!-- Carrito desplegable -->
+<div id="cart" class="cart-hidden">
+  <h3>Carrito de Compras</h3>
+  <ul id="cart-items"></ul>
+  <p>Total: $<span id="cart-total">0.00</span></p>
+  <button onclick="checkout()">Proceder al Pago</button>
+</div>
+
+
   </header>
 
   <section class="hero">
