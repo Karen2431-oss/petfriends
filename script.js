@@ -1,34 +1,38 @@
-let cart = [];
-let total = 0;
+let carrito = [];
 
-function toggleCart() {
-  const cartElement = document.getElementById('cart');
-  cartElement.classList.toggle('cart-visible');
-  cartElement.classList.toggle('cart-hidden');
+function agregarAlCarrito(nombre, precio) {
+  carrito.push({ nombre, precio });
+  actualizarCarrito();
 }
 
-function addToCart(productName, price) {
-  cart.push({ name: productName, price: price });
-  total += price;
-  updateCartDisplay();
-}
-
-function updateCartDisplay() {
-  const cartItems = document.getElementById('cart-items');
-  cartItems.innerHTML = '';
-  cart.forEach((item, index) => {
+function actualizarCarrito() {
+  const lista = document.getElementById('lista-carrito');
+  const total = document.getElementById('total');
+  lista.innerHTML = '';
+  let totalPrecio = 0;
+  carrito.forEach(item => {
     const li = document.createElement('li');
-    li.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-    cartItems.appendChild(li);
+    li.textContent = `${item.nombre} - $${item.precio.toFixed(2)}`;
+    lista.appendChild(li);
+    totalPrecio += item.precio;
   });
-  document.getElementById('cart-count').textContent = cart.length;
-  document.getElementById('cart-total').textContent = total.toFixed(2);
+  total.textContent = totalPrecio.toFixed(2);
 }
 
-function checkout() {
-  // Lógica para proceder al pago
-  alert('Procediendo al pago...');
+function vaciarCarrito() {
+  carrito = [];
+  actualizarCarrito();
 }
+
+function abrirCarrito() {
+  document.getElementById('carrito-modal').classList.remove('hidden');
+}
+
+function cerrarCarrito() {
+  document.getElementById('carrito-modal').classList.add('hidden');
+}
+
+document.querySelector('.acciones span').addEventListener('click', abrirCarrito);
 
 
 <script>

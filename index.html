@@ -17,17 +17,14 @@
       <a href="peces.html">Peces</a>
     </nav>
     
-<!-- Ícono del carrito -->
-<div id="cart-icon" onclick="toggleCart()">
-  🛒 <span id="cart-count">0</span>
-</div>
-
-<!-- Carrito desplegable -->
-<div id="cart" class="cart-hidden">
-  <h3>Carrito de Compras</h3>
-  <ul id="cart-items"></ul>
-  <p>Total: $<span id="cart-total">0.00</span></p>
-  <button onclick="checkout()">Proceder al Pago</button>
+<div id="carrito-modal" class="modal-carrito hidden">
+  <div class="contenido-carrito">
+    <h2>Tu carrito</h2>
+    <ul id="lista-carrito"></ul>
+    <p>Total: $<span id="total">0.00</span></p>
+    <button onclick="vaciarCarrito()">Vaciar carrito</button>
+    <button onclick="cerrarCarrito()">Cerrar</button>
+  </div>
 </div>
 
 
